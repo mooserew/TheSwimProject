@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Swim - Login</title>
+    <title>Swim - Register</title>
     <link rel="icon" type="image/png" href="images/altlogo-no-bg.png"/>
     <!-- css -->
     <link rel="stylesheet" href="css/loginstyles.css" />
@@ -17,11 +17,19 @@
   <body>
 
     <section class="container forms">
-        <div class="form login">
+        <div class="form register">
             <div class="form-content">
-                <header>Login @ Swim</header>
+                <header>Register @ Swim</header>
 
                 <form action="#">
+                    <div class="field input-field">
+                        <input type="text" placeholder="Nome Completo" class="input">
+                    </div>
+
+                    <div class="field input-field">
+                        <input type="text" placeholder="Nome de utilizador" class="input">
+                    </div>
+
                     <div class="field input-field">
                         <input type="email" placeholder="E-mail" class="input">
                     </div>
@@ -31,16 +39,12 @@
                         <i class='bx bx-hide eye-icon'></i>
                     </div>
 
-                    <div class="form-link">
-                        <a href="#" class="forgot-pass">Esqueceu-se da palavra-passe?</a>
-                    </div>
-
                     <div class="field button-field">
-                        <button>Entrar</button>
+                        <button>Registar</button>
                     </div>
 
                     <div class="form-link">
-                        <span>Não tem uma conta? <a href="#" class="link signup-link" onclick="window.location.href='register.html'"> Registar</a></span>
+                        <span>Já tem uma conta? <a href="#" class="link login-link" onclick="window.location.href='login.html'"> Entrar</a></span>
                     </div>
                 </form>
             </div>
