@@ -16,14 +16,13 @@ nav{
     position: fixed;
     top: 0;
     left: 0;
-    height: 60px;
+    height: 70px;
     width: 100%;
     display: flex;
     align-items: center;
     background: rgb(18,18,18);
     box-shadow:0 0 1px rgba(0,0,0,0.1);
     border-bottom: 1px solid darkslategray;
-
 }
 
 nav .logo{
@@ -93,4 +92,48 @@ nav .sidebar{
 .nav-link:hover .icon,
 .nav-link:hover .link {
     color: #fff;
+}
+
+.input-box {
+    position: relative;
+    height: 50px;
+    max-width: 350px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: 30px; 
+    border-radius: 6px;
+    background-color: rgb(16,16,16);
+}
+
+.input-box input{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding: 0 15px 0 65px;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    background-color: rgb(16,16,16);
+    
+}
+
+.input-box .search{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 60px;
+    border-radius: 6px 0 0 6px;
+    background-color: rgb(16,16,16);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search .search-icon{
+    font-size: 25px;
+    color: #4070f4;
 }
