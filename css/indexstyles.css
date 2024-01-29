@@ -137,3 +137,9 @@ nav .sidebar{
     font-size: 25px;
     color: #4070f4;
 }
+
+@media only screen and (max-width: 670px) {
+    nav .sidebar {
+        display: none;
+    }
+}
