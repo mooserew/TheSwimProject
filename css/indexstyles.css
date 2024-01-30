@@ -144,7 +144,7 @@ body {
     color: #4070f4;
 }
 
-@media only screen and (max-width: 670px) {
+@media only screen and (max-width: 635px) {
     .side-nav .sidebar {
         display: none;
     }
