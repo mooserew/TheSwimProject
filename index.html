@@ -1,78 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Swim - Home</title>
-    <link rel="icon" type="image/png" href="images/altlogo-no-bg.png"/>
+    <link rel="icon" type="image/png" href="images/altlogo-no-bg.png" />
     <!-- css -->
     <link rel="stylesheet" href="css/indexstyles.css" />
 
     <!-- boxicons -->
     <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
     />
-</head>
-<body>
-  <nav>
-    <div class="input-box">
-      <input type ="text" placeholder="Search...">
-      <span class="search">
-        <i class='bx bx-search search-icon'></i>
-      </span>
-    </div>
-    <div class="sidebar">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="top-nav">
+      <div class="input-box">
+        <input type="text" placeholder="Search..." />
+        <span class="search">
+          <i class="bx bx-search search-icon"></i>
+        </span>
+      </div>
       <div class="logo">
-        <img src="images/altlogo-no-bg.png" alt="Swim Logo">
+        <img src="images/altlogo-no-bg.png" alt="Swim Logo" />
         <span class="logo-name">Swim</span>
       </div>
+    </nav>
+    <nav class="side-nav">
+      <div class="sidebar">
+        <div class="sidebar-content">
+          <ul class="lists">
+            <li class="list">
+              <a href="index.html" class="nav-link">
+                <i class="bx bx-home-alt icon"></i>
+                <span class="link">Página Principal</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="#" class="nav-link">
+                <i class="bx bx-user icon"></i>
+                <span class="link">Perfil</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="#" class="nav-link">
+                <i class="bx bx-bell icon"></i>
+                <span class="link">Notificações</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="#" class="nav-link">
+                <i class="bx bx-chat icon"></i>
+                <span class="link">Mensagens</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="#" class="nav-link">
+                <i class="bx bx-bar-chart-alt-2 icon"></i>
+                <span class="link">Estatísticas</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="#" class="nav-link">
+                <i class="bx bx-bookmark icon"></i>
+                <span class="link">Guardados</span>
+              </a>
+            </li>
+          </ul>
 
-      <div class="sidebar-content">
-        <ul class="lists">
-          <li class="list">
-            <a href="index.html" class="nav-link">
-              <i class="bx bx-home-alt icon"></i>
-              <span class="link">Página Principal</span>
-            </a>
-          </li>
-          <li class="list">
-            <a href="#" class="nav-link">
-              <i class='bx bx-user icon' ></i>
-              <span class="link">Perfil</span>
-            </a>
-          </li>
-          <li class="list">
-            <a href="#" class="nav-link">
-              <i class="bx bx-bell icon"></i>
-              <span class="link">Notificações</span>
-            </a>
-          </li>
-          <li class="list">
-            <a href="#" class="nav-link">
-              <i class='bx bx-bar-chart-alt-2 icon'></i>
-              <span class="link">Estatísticas</span>
-            </a>
-          </li>
-          <li class="list">
-            <a href="#" class="nav-link">
-              <i class='bx bx-bookmark icon'></i>
-              <span class="link">Guardados</span>
-            </a>
-          </li>
-        </ul>
-
-        <div class="bottom-content">
-          <li class="list">
-            <a href="login.html" class="nav-link">
-              <i class="bx bx-log-out icon"></i>
-              <span class="link">Sair</span>
-            </a>
-          </li>
+          <div class="bottom-content">
+            <li class="list">
+              <a href="login.html" class="nav-link">
+                <i class="bx bx-log-out icon"></i>
+                <span class="link">Sair</span>
+              </a>
+            </li>
+          </div>
         </div>
       </div>
+    </nav>
     </div>
-  </nav>
-
-
-</body>
+  </body>
 </html>

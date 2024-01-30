@@ -1,18 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
-body{
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
     min-height: 100%;
-    background: rgb(16,16,16);
+    background: rgb(16, 16, 16);
 }
 
-nav{
+.top-nav {
     position: fixed;
     top: 0;
     left: 0;
@@ -20,18 +25,20 @@ nav{
     width: 100%;
     display: flex;
     align-items: center;
-    background: rgb(18,18,18);
-    box-shadow:0 0 1px rgba(0,0,0,0.1);
+    background: rgb(18, 18, 18);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid darkslategray;
+    z-index: 2;
 }
 
-nav .logo{
+.top-nav .logo {
+    position: absolute;
+    left: 30px;
     display: flex;
     align-items: center;
-    margin: 0 30px;
 }
 
-.logo .logo-name{
+.logo .logo-name {
     color: white;
     font-size: 22px;
     font-weight: 500;
@@ -42,31 +49,31 @@ nav .logo{
     margin-right: 10px;
 }
 
-nav .sidebar{
-    position:fixed;
+.side-nav .sidebar {
+    position: fixed;
     top: 0;
     left: 0;
     height: 100%;
     width: 260px;
-    padding: 20px 0;
-    background-color: rgb(18,18,18);
-    box-shadow:0 5px 10px rgba(0,0,0,0.1);
+    padding: 50px 0;
+    background-color: rgb(18, 18, 18);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     border-right: 1px solid darkslategray;
 }
 
-.sidebar .sidebar-content{
+.sidebar .sidebar-content {
     display: flex;
     height: 100%;
     flex-direction: column;
     justify-content: space-between;
-    padding: 30px 16px;
+    padding: 40px 12px 0px;
 }
 
-.sidebar-content .list{
+.sidebar-content .list {
     list-style: none;
 }
 
-.list .nav-link{
+.list .nav-link {
     display: flex;
     align-items: center;
     padding: 14px 12px;
@@ -74,18 +81,19 @@ nav .sidebar{
     text-decoration: none;
 }
 
-.nav-link:hover{
+.nav-link:hover {
     background-color: #4070f4;
 }
-.nav-link .icon{
+
+.nav-link .icon {
     margin-right: 14px;
     font-size: 20px;
     color: #707070;
 }
 
-.nav-link .link{
+.nav-link .link {
     font-size: 16px;
-    color: #fff;
+    color: #F9F6EE;
     font-weight: 400;
 }
 
@@ -100,13 +108,12 @@ nav .sidebar{
     max-width: 350px;
     width: 100%;
     margin-left: auto;
-    margin-right: 30px; 
+    margin-right: 30px;
     border-radius: 6px;
-    background-color: rgb(16,16,16);
+    background-color: rgb(16, 16, 16);
 }
 
-.input-box input{
-    position: relative;
+.input-box input {
     height: 100%;
     width: 100%;
     padding: 0 15px 0 65px;
@@ -116,30 +123,33 @@ nav .sidebar{
     font-size: 16px;
     font-weight: 400;
     color: #fff;
-    background-color: rgb(16,16,16);
-    
+    background-color: rgb(16, 16, 16);
 }
 
-.input-box .search{
+.input-box .search {
     position: absolute;
     left: 0;
     top: 0;
     height: 100%;
     width: 60px;
     border-radius: 6px 0 0 6px;
-    background-color: rgb(16,16,16);
+    background-color: rgb(16, 16, 16);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.search .search-icon{
+.search .search-icon {
     font-size: 25px;
     color: #4070f4;
 }
 
 @media only screen and (max-width: 670px) {
-    nav .sidebar {
+    .side-nav .sidebar {
+        display: none;
+    }
+
+    .top-nav .logo {
         display: none;
     }
 }
